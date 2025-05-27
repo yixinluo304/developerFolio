@@ -23,10 +23,9 @@ const greeting = {
   username: "Yixin Luo",
   title: "Hi all, I'm Yixin",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
+    "A passionate Data Scientist 📊 with hands-on experience building data-driven solutions across sectors like health, housing, finance, and sustainability. Skilled in Python / R / SQL / Cloud Computing / Tableau / Power BI / GIS, I love turning messy data into clear stories and actionable insights using machine learning, NLP, and data visualization. Always exploring new tools, frameworks, and datasets to unlock the next big idea 🔍✨"  ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1MRuHmmR226ojmvtjaFzfY80XoPmBN9Fi/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -45,14 +44,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "INSIGHT-DRIVEN DATA SCIENTIST WHO TURNS RAW DATA INTO ACTIONABLE STRATEGY",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Build and evaluate machine learning and deep learning models to power predictions, classification, and decision-making."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Develop robust ETL pipelines and manage complex databases across SQL, NoSQL, and cloud environments."),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Conduct NLP and text analytics on unstructured data to extract insights from reviews, surveys, and reports."
     )
   ],
 
@@ -61,20 +60,36 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "sql-database",
+      skillName: "SQL Database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
+      skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Snowflake",
+      fontAwesomeClassname: "fas fa-snowflake"
+    },
+    {
+      skillName: "Hadoop",
+      fontAwesomeClassname: "fas fa-server"
+    },
+    {
+      skillName: "Excel",
+      fontAwesomeClassname: "fas fa-file-excel"
+    },
+    {
+      skillName: "Database Management",
+      fontAwesomeClassname: "fas fa-file"
+    },
+    {
+      skillName: "Machine Learning",
+      fontAwesomeClassname: "fas fa-brain"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -87,22 +102,21 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Georgetown University",
-      logo: require("./assets/images/Georgetown.jpg"),
+      logo: require("./assets/images/georgetown.png"),
       subHeader: "Master of Science in Data Science for Public Policy",
-      duration: "August 2023 - May 2025",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      duration: "August 2023 - May 2025"
     },
     {
       schoolName: "Sichuan International Studies University",
       logo: require("./assets/images/isu.png"),
-      subHeader: "Bachelor of Science in Economics",
-      duration: "September 2013 - April 2023",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      subHeader: "Bachelor of Economics in International Economics and Trade",
+      duration: "September 2013 - April 2023"
+    },
+    {
+      schoolName: "Sichuan International Studies University",
+      logo: require("./assets/images/isu.png"),
+      subHeader: "Bachelor of Art in Diplomacy",
+      duration: "September 2013 - April 2023"
     }
   ]
 };
@@ -110,7 +124,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Python/R", //Insert stack or technology you have experience in
@@ -134,29 +148,46 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Data Analyst Intern",
+      company: "Stewards of Affordable Housing for the Future ",
+      companylogo: require("./assets/images/housing.png"),
+      date: "Dec 2024 – May 2025",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Queried and analyzed affordable housing data using SQL on a day-to-day basis, delivering insight-driven recommendations that informed outreach strategies and resource allocation for underserved communities.",
+        "Built and deployed predictive models to forecast gentrification and migration trends; used Excel, Python and R to clean and analyze 50K+ housing and demographic records.",
+        "Created informative dashboards using Power BI, Tableau, and R Shiny to visualize the geospatial housing property portfolio, track key performance indicators, and support internal reporting and external policy advocacy"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Data Analyst",
+      company: "U.S. Office of Personnel Management",
+      companylogo: require("./assets/images/ops.png"),
+      date: "Sept 2023 – Dec 2024",
+      descBullets: [
+        "Defined problem framework and developed testable hypotheses for a multi-agency randomized controlled trial (RCT) involving 8 federal bodies; performed EDA and built statistical models to evaluate behavioral outcomes and uncover data-driven trends that directly influenced executive strategies.",
+        "Automated data processing pipelines in R and Python, enabling seamless integration of multiple federal data sources; reduced cleaning and aggregation time by 40%, ensuring operational feasibility for scaling the pilot."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Data Science Scholar",
+      company: "Massive Data Institute",
+      companylogo: require("./assets/images/mdi.png"),
+      date: "May 2024 – Aug 2024",
+      descBullets: [
+        "Analyzed 12 waves of health and financial data using Spark and time series modeling to detect access and stability trends, contributing to a 15% improvement in resource allocation for underserved populations",
+        "Applied machine learning to assess how chronic conditions and socioeconomic status influence employment trajectories, providing evidence for long-term labor-market support strategies."
+      ]
+    },
+    {
+      role: "Data Science Consultant",
+      company: "Data Whale LLC",
+      companylogo: require("./assets/images/datawhale.png"),
+      date: "Oct 2021-Mar 2023",
+      descBullets: [
+        "Supported a high-impact consulting engagement with the World Bank, contributing to the assessment of financial protection data systems across 48 countries; conducted landscape analyses to inform the framework design.",
+        "Designed time series statistical models to detect anomalies in data coverage, outlier trends, and quality inconsistencies across 500+ datasets, resulting in a 35% increase in automated data quality flagging accuracy.",
+        "Queried, cleaned, and harmonized 8M+ records using SQL and R, automating ETL pipelines to integrate data from DHS, UNICEF, and national surveys, reducing data processing time by 30%."
+      ]
     }
   ]
 };
@@ -172,29 +203,39 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/project1.jpg"),
+      projectName: "China's Development Finance Projects in the Global South",
+      projectDesc: "This project analyzes China’s development finance investments through multiple analytical lenses, including sectoral distributions, geographical patterns, and temporal trends. While the core dataset tracks financial investments and funding flows, our analysis extends beyond purely monetary aspects to understand the broader patterns and characteristics of these development projects.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://yt583-tian.shinyapps.io/china-development/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/project2.jpg"),
+      projectName: "Understanding Guest Experiences: Sentiment and N-gram Analysis of TripAdvisor Hotel Reviews",
+      projectDesc: "This project leverages aspect-based sentiment analysis and n-gram analysis to extract actionable insights from customer feedback, focusing on key aspects such as location, service, room, and staff. Using Hugging Face’s DistilBERT model and multithreading for scalability, I classified sentiment by aspect to pinpoint strengths and weaknesses in guest experiences. In parallel, I performed frequency-based linguistic analysis to identify recurring unigrams, bigrams, and trigrams, which were then visualized to highlight common themes and priorities. This dual approach helps businesses better understand guest concerns, enhance service quality, and uncover patterns that drive customer satisfaction.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://yixinluo304.github.io/DSIII_Concept_Showcase/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/project3.jpg"),
+      projectName: "Adversarial Simulation for Enhancing Credit Card Fraud Detection Models",
+      projectDesc: "This project evaluates the robustness of machine learning models used for credit card fraud detection through adversarial simulation on tabular transaction data. Using Python, Snowflake SQL, and Amazon EC2/S3, we built and tested models including logistic regression, random forest, and MLP on a highly imbalanced dataset. We introduced realistic feature perturbations—such as changes in transaction amount, time, and distance from home—to simulate evasion tactics. Our results showed that while random forest performed best under normal conditions, MLP demonstrated the greatest resilience under adversarial manipulation, highlighting its potential for secure real-world deployment. All workflows were fully version-controlled and cloud-integrated to support scalable, reproducible fraud analytics.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://yixinluo304.github.io/fraud-detection-project/"
         }
       ]
     }
@@ -260,7 +301,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -332,7 +373,6 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
   email_address: "yixinluo304@gmail.com"
 };
 
